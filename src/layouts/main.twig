@@ -2,7 +2,16 @@
 {% extends 'base.twig' %}
 
 {% block base_content %}
-  <main class="h-screen flex items-center justify-center">
-    {% block content %}{% endblock %}
-  </main>
+  <div class="drawer lg:drawer-open">
+    <input id="left-sidebar-drawer" type="checkbox" class="drawer-toggle"/>
+    <div class="drawer-content flex flex-col">
+      {% include '../partials/navbar.twig' %}
+      <main class="flex-1 h-screen overflow-y-auto md:pt-4 pt-4 px-6 bg-base-200">
+        <div class="min-h-[calc(100vh-250px)]">
+          {% block content %}{% endblock %}
+        </div>
+      </main>
+    </div>
+    {% include '../partials/sidebar.twig' %}
+  </div>
 {% endblock %}
