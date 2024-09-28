@@ -1,0 +1,29 @@
+<!-- src/layouts/auth.twig -->
+{% extends 'base.twig' %}
+
+{% block base_content %}
+  <main class="h-screen flex items-center justify-center">
+    <div class="container mx-auto">
+      <div class="flex flex-col md:flex-row w-full max-w-5xl overflow-hidden mx-auto">
+        <!-- Logo -->
+        <div class="hidden md:flex md:w-1/2 flex-col items-center justify-center">
+          <img src="/src/assets/logo.png" alt="Logo" class="w-48">
+          <h1 class="mt-3 text-3xl font-bold text-blue-400">KANBAN</h1>
+        </div>
+
+        <!-- Auth Form -->
+        <div class="w-full md:w-1/2 p-6 flex flex-col items-center justify-center">
+          <div class="w-full max-w-xs">
+            <div class="flex flex-col items-center justify-center">
+              <img src="/src/assets/logo.png" alt="Logo" class="w-8 mb-3">
+              <h2 class="text-2xl font-bold text-center">{{ page_heading }}</h2>
+              <span class="text-sm mt-1">{{ page_subheading }}</span>
+            </div>
+
+            {% block content %}{% endblock %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+{% endblock %}

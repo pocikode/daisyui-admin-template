@@ -1,0 +1,43 @@
+<!-- src/pages/signup.twig -->
+{% extends 'layouts/auth.twig' %}
+{% block content %}
+  <form class="mt-5 space-y-4">
+    <div class="space-y-2">
+      <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text">Name*</span>
+        </div>
+        <input type="text" placeholder="Enter your name" class="input input-bordered w-full max-w-xs"/>
+      </label>
+      <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text">Email*</span>
+        </div>
+        <input type="email" placeholder="Enter your email" class="input input-bordered w-full max-w-xs"/>
+      </label>
+      <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text">Password*</span>
+        </div>
+        <input type="password" placeholder="Create a password" class="input input-bordered w-full max-w-xs"/>
+        <div class="label">
+          <span class="label-text-alt">Must be at least 8 characters.</span>
+        </div>
+      </label>
+    </div>
+
+    <div class="flex flex-col space-y-3">
+      <button type="submit" class="btn btn-primary">
+        Get started
+      </button>
+      <button type="submit" class="btn btn-outline">
+        <img src="/src/assets/google.png" alt="Google" class="w-5">
+        Sign up with Google
+      </button>
+    </div>
+
+    <p class="text-center text-sm">Already have an account?
+      <a href="/login" class="text-primary">Login</a>
+    </p>
+  </form>
+{% endblock %}
