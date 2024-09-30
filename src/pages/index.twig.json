@@ -1,0 +1,40 @@
+{
+  "title": "Dashboard",
+  "top_selling": [
+    {
+      "name": "Surf Excel",
+      "sold_qty": 30,
+      "remaining_qty": 30,
+      "price": 100
+    },
+    {
+      "name": "Rin",
+      "sold_qty": 21,
+      "remaining_qty": 15,
+      "price": 207
+    },
+    {
+      "name": "Parle G",
+      "sold_qty": 19,
+      "remaining_qty": 17,
+      "price": 105
+    }
+  ],
+  "low_stocks": [
+    {
+      "name": "BonCabe",
+      "image": "https://tastysnack.id/cdn/shop/files/29_6609798f-505f-484a-9697-2d0eb5f80f37_300x.png?v=1718253428",
+      "remaining_qty": 10
+    },
+    {
+      "name": "Lays",
+      "image": "https://tastysnack.id/cdn/shop/files/5_623ad3b4-b588-45f2-b372-896bdd0b2504_1000x1000.png?v=1706171546",
+      "remaining_qty": 15
+    },
+    {
+      "name": "Cheetos",
+      "image": "https://tastysnack.id/cdn/shop/files/3_2cafefd2-ffb7-48ca-8188-ed40883ff828_900x.png?v=1706168007",
+      "remaining_qty": 12
+    }
+  ]
+}
